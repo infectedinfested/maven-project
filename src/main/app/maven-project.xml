@@ -23,5 +23,6 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 			<db:parameterized-query><![CDATA[select * from FLIGHTS]]></db:parameterized-query>
 		</db:select>
 		<object-to-string-transformer doc:name="Object to String" />
+        <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
 	</flow>
 </mule>
